@@ -1,6 +1,6 @@
 api_platform:
-    title: Hello API Platform
-    version: 1.0.0
+    title: papi discover
+    version: 0.0.1
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
     patch_formats:
