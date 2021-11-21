@@ -2,7 +2,7 @@ import React from "react";
 import { HydraAdmin, fetchHydra, hydraDataProvider } from "@api-platform/admin";
 import { parseHydraDocumentation } from "@api-platform/api-doc-parser";
 
-const entrypoint = "http://papi.gang";
+const entrypoint = process.env.REACT_APP_API_ENTRYPOINT;
 
 const dataProvider = hydraDataProvider(
   entrypoint,
