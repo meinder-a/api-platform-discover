@@ -1,0 +1,12 @@
+# ---
+# --- Registries
+# ---
+App\Entity\Registry:
+    registry_afnic:
+        name: Afnic
+    registry_godaddy:
+        name: Godaddy
+    registry_core:
+        name: Core
+    registry_donuts:
+        name: Donuts

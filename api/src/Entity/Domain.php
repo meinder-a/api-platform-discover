@@ -19,7 +19,7 @@ class Domain
 
     #[ORM\Column(type: 'string', length: 255)]
     #[ApiFilter(SearchFilter::class, strategy: 'ipartial')]
-    private $domaine_name;
+    private $domain_name;
 
     #[ORM\Column(type: 'datetime_immutable', nullable: true)]
     private $registered_at;
@@ -49,14 +49,14 @@ class Domain
         return $this->id;
     }
 
-    public function getDomaineName(): ?string
+    public function getDomainName(): ?string
     {
-        return $this->domaine_name;
+        return $this->domain_name;
     }
 
-    public function setDomaineName(string $domaine_name): self
+    public function setDomainName(string $domain_name): self
     {
-        $this->domaine_name = $domaine_name;
+        $this->domain_name = $domain_name;
 
         return $this;
     }

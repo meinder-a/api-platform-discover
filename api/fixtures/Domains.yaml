@@ -1,0 +1,25 @@
+# ---
+# --- Domains
+# ---
+App\Entity\Domain:
+    domain_hello-world.fr:
+        domainName: "hello-world.fr"
+        createdAt: <(new \DateTimeImmutable('2021-11-21 03:48:00'))>
+        registeredAt: <(new \DateTimeImmutable('2021-11-21 03:48:00'))>
+        expiresAt: <(new \DateTimeImmutable('2022-11-21 03:48:00'))>
+        extension: "@extension_fr"
+        customer: "@customer_john_doe"
+    domain_api-platform-rocks.com:
+        domainName: "api-platform-rocks.com"
+        createdAt: <(new \DateTimeImmutable('2015-06-12 09:58:51'))>
+        registeredAt: <(new \DateTimeImmutable('2015-06-12 09:58:51'))>
+        expiresAt: <(new \DateTimeImmutable('2038-01-19 03:14:08'))>
+        extension: "@extension_com"
+        customer: "@customer_kevin_dunglas"
+    domain_google.us:
+        domainName: "google.us"
+        createdAt: <(new \DateTimeImmutable('2002-04-19 23:59:59'))>
+        registeredAt: <(new \DateTimeImmutable('2002-04-19 23:59:59'))>
+        expiresAt: <(new \DateTimeImmutable('2022-04-18 23:59:59'))>
+        extension: "@extension_us"
+        customer: "@customer_google"

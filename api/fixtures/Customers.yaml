@@ -1,0 +1,10 @@
+# ---
+# --- Customers
+# ---
+App\Entity\Customer:
+    customer_john_doe:
+        name: John Doe
+    customer_kevin_dunglas:
+        name: Kévin Dunglas
+    customer_google:
+        name: Google

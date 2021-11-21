@@ -1,0 +1,45 @@
+# ---
+# --- Extensions
+# ---
+App\Entity\Extension:
+    extension_academy:
+        extension: academy
+        extensionType: "@tld_newgTLD"
+        registry: "@registry_donuts"
+    extension_com:
+        extension: com
+        extensionType: "@tld_gTLD"
+        registry: "@registry_core"
+    extension_fr:
+        extension: fr
+        extensionType: "@tld_ccTLD"
+        registry: "@registry_afnic"
+    extension_us:
+        extension: us
+        extensionType: "@tld_ccTLD"
+        registry: "@registry_godaddy"
+# ---
+# --- Extension Types
+# ---
+App\Entity\ExtensionType:
+    tld_IDNs:
+        description: "internationalized top-level domains"
+        name: IDNs
+    tld_ccTLD:
+        description: "country code top-level domains"
+        name: ccTLD
+    tld_gTLD:
+        description: "generic top-level domains"
+        name: gTLD
+    tld_grTLD:
+        description: "restricted generic top-level domains"
+        name: grTLD
+    tld_newgTLD:
+        description: "new generic top-level domains"
+        name: newgTLD
+    tld_sTLD:
+        description: "sponsored top-level domains"
+        name: sTLD
+    tld_tTLD:
+        description: "testing top-level domains"
+        name: tTLD

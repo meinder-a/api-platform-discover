@@ -24,6 +24,10 @@ class Extension
     #[ORM\JoinColumn(nullable: false)]
     private $extension_type;
 
+    #[ORM\ManyToOne(targetEntity: Registry::class, inversedBy: 'extensions')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $registry;
+
     #[ORM\OneToMany(mappedBy: 'extension', targetEntity: Domain::class, orphanRemoval: true)]
     private $domains;
 
@@ -57,6 +61,18 @@ class Extension
     public function setExtensionType(?ExtensionType $extension_type): self
     {
         $this->extension_type = $extension_type;
+
+        return $this;
+    }
+
+    public function getRegistry(): ?Registry
+    {
+        return $this->registry;
+    }
+
+    public function setRegistry(?Registry $registry): self
+    {
+        $this->registry = $registry;
 
         return $this;
     }
